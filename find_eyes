@@ -30,11 +30,11 @@ for n in range(1, 41):
             #print(im)
             landmarks = predictor(gray, face)
 
-            x1 = landmarks.part(45).x
-            y1 = landmarks.part(45).y
+            x1 = landmarks.part(46).x
+            y1 = landmarks.part(46).y
 
-            x2 = landmarks.part(36).x
-            y2 = landmarks.part(36).y
+            x2 = landmarks.part(37).x
+            y2 = landmarks.part(37).y
             
             key = '"img": "s{}/{}.pgm"'.format(n, i)                       
             value = ( {"left_eye_x": x1, "left_eye_y": y1, "right_eye_x": x2, "right_eye_y": y2} )
